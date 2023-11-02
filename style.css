@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+main {
+    font-family: 'Roboto', sans-serif;
+    height: 500px;
+    width: 370px;
+}
+
+main img {
+    height: 500px;
+    width: 370px;
+    object-fit: cover;
+    border-radius: 25px;
+    position: relative;
+    filter: brightness(100%);
+}
+
+.buttons {
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+}
+
+main:hover .buttons {
+    opacity: 1;
+}
+
+img:hover {
+    filter: brightness(60%);
+}
+
+.save:hover {
+    animation-name: slidebottom;
+    animation-duration: 4s;
+
+}
+
+@keyframes slidebottom {
+    from {
+        transform: translatey(0px);
+      }
+    
+      to {
+        transform: translatey(300px);
+      }
+    }
+
+.bottom:hover {
+    animation-name: slide;
+    animation-duration: 4s;
+}
+
+@keyframes slide {
+    from {
+        transform: translatey(0%opx);
+      }
+    
+      to {
+        transform: translatey(-300px);
+      }
+    }
+
+
+.save {
+    background-color: #e60022;
+    height: 80px;
+    width: 115px;
+    border-radius: 45px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 230px;
+}
+
+.bottom {
+    width: 370px;
+    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 440px;
+    }
+
+.description {
+    height: 50px;
+    width: 200px;
+    background-color: #edecec;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 20px;
+    padding-left: 3px;
+    font-weight: 600;
+}
+
+.description svg {
+    rotate: -45deg;
+    padding-left: 10px;
+    padding-right: 5px;
+    vertical-align: -0.130em;
+}
+
+.share {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+.dots {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.dots svg{
+    padding-top: 7px;
+}
+
